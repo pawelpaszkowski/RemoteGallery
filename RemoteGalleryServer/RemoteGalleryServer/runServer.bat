@@ -1,0 +1,1 @@
+java -cp bin -Djava.rmi.server.codebase=file:/C:/Programy/00Rusz/RemoteGalleryServer/bin Server

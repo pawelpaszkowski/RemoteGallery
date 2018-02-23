@@ -1,0 +1,3 @@
+grant codeBase "file:C:/Programy/00Rusz/RemoteGalleryClient/bin" {
+    permission java.security.AllPermission;
+};

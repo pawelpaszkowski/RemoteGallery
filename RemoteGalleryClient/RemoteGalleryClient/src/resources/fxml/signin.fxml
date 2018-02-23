@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #aaa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.remotegallery.controllers.SignInController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="607.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/mapy.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="264.0" layoutY="107.0" prefHeight="280.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="emailField" layoutX="36.0" layoutY="14.0" prefHeight="25.0" prefWidth="192.0" promptText="login" />
+            <PasswordField fx:id="passwordField" layoutX="36.0" layoutY="53.0" prefHeight="25.0" prefWidth="192.0" promptText="hasło" />
+            <Button fx:id="loginButton" layoutX="36.0" layoutY="97.0" mnemonicParsing="false" onAction="#signIn" prefHeight="25.0" prefWidth="192.0" text="Zaloguj się" />
+            <Button fx:id="loginButton1" layoutX="37.0" layoutY="232.0" mnemonicParsing="false" onAction="#goToRegisterForm" prefHeight="25.0" prefWidth="192.0" text="Zarejestruj się" />
+            <Button fx:id="loginButton11" layoutX="66.0" layoutY="185.0" mnemonicParsing="false" onAction="#remindPassword" prefHeight="25.0" prefWidth="134.0" text="Przypominanie hasła" />
+         </children>
+      </AnchorPane>
+      <TitledPane fx:id="errorPane" animated="false" layoutX="60.0" layoutY="247.0" prefHeight="117.0" prefWidth="220.0" text="Niepoprawne dane" textFill="#c92222">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="91.0" prefWidth="185.0">
+               <children>
+                  <Label fx:id="errors" layoutX="14.0" layoutY="6.0" text="Label" textFill="#c92222" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

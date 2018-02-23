@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #aaa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.remotegallery.controllers.MenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="607.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/mapy2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="150.0" layoutY="44.0" prefHeight="315.0" prefWidth="300.0">
+         <children>
+            <Button layoutX="35.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToMap" prefHeight="35.0" prefWidth="232.0" text="Mapa" />
+            <Button layoutX="35.0" layoutY="78.0" mnemonicParsing="false" onAction="#goToPlaces" prefHeight="35.0" prefWidth="232.0" text="Oznaczone miejsca" />
+            <Button layoutX="35.0" layoutY="139.0" mnemonicParsing="false" onAction="#goToStatistics" prefHeight="35.0" prefWidth="232.0" text="Statystyki" />
+            <Button layoutX="35.0" layoutY="199.0" mnemonicParsing="false" onAction="#manageAccount" prefHeight="35.0" prefWidth="232.0" text="Zarządzanie kontem" />
+            <Button layoutX="34.0" layoutY="259.0" mnemonicParsing="false" onAction="#logOut" prefHeight="35.0" prefWidth="232.0" text="Wyloguj się" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

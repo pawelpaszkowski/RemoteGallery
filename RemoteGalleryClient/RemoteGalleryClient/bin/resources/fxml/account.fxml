@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #aaa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.remotegallery.controllers.AccountController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="607.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/mapy2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="150.0" layoutY="14.0" prefHeight="394.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="nameField" layoutX="34.0" layoutY="8.0" prefHeight="25.0" prefWidth="232.0" promptText="nie podano" />
+            <TextField fx:id="surnameField" layoutX="34.0" layoutY="50.0" prefHeight="25.0" prefWidth="232.0" promptText="nie podano" />
+            <TextField fx:id="emailField" layoutX="34.0" layoutY="92.0" prefHeight="25.0" prefWidth="232.0" promptText="email" />
+            <Button layoutX="34.0" layoutY="124.0" mnemonicParsing="false" onAction="#editAccount" prefHeight="35.0" prefWidth="232.0" text="Aktualizuj powyższe dane" />
+            <Button layoutX="34.0" layoutY="159.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="35.0" prefWidth="232.0" text="Zmień hasło" />
+            <Button layoutX="34.0" layoutY="194.0" mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="232.0" text="Anuluj" />
+            <TitledPane fx:id="errorPane" animated="false" layoutX="34.0" layoutY="237.0" prefHeight="139.0" prefWidth="232.0" text="Niepoprawne dane" textFill="#c92222">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="91.0" prefWidth="185.0">
+                     <children>
+                        <Label fx:id="errors" layoutX="14.0" layoutY="6.0" text="komunikaty" textFill="#c92222" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <Label layoutX="43.0" layoutY="-8.0" text="Imię" textFill="WHITE" />
+            <Label layoutX="41.0" layoutY="33.0" text="Nazwisko" textFill="WHITE" />
+            <Label layoutX="42.0" layoutY="75.0" text="Email" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="466.0" layoutY="351.0" mnemonicParsing="false" onAction="#deleteAccount" prefHeight="35.0" prefWidth="94.0" text="Usuń konto" />
+   </children>
+</AnchorPane>
